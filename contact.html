@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/dragon.ico" />   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&family
+        osefin+Slab:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/023be3cbcd.js" crossorigin="anonymous"></script>
+    <title>Kris Hokr</title>
+</head>
+<body>
+    <header class="page-header">
+        <img class="logo page-header__item" src="img/dragon-solid.svg" alt="A logo that is a green dragon." >
+
+        <nav class="page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation" ><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>               
+                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a></li>
+                <li role="presentation" ><a href="work.html" role="menuitem" class="navigation-list__item">Work</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div>
+            <h1>Don't be a stranger.</h1>           
+            <button class="primary_button"><a href="#contactForm">Get in touch!</a></button>
+            <a class="links" href="mailto:kristoferhokr@gmail.com">Kris's Email</a>
+        </div>
+
+        <form id="contactForm" action="" method="post">
+            <label for="contact-email" Email*: </label>
+            <input id="contact-email" placeholder="email"type="email" required>
+          
+            <label for="contact-phone">Telephone: </label>
+            <input id="contact-phone" type="tel" placeholder="xxx-xxx-xxxx">
+          
+            <label for="contact-message">Message*</label>
+            <textarea id="contact-message" required maxlength="250" placeholder="<250 characters>"></textarea>></textarea>
+          
+            <input type="submit" value="Send message" class="primary_button">
+          </form>
+          
+    </main>
+    
+    <footer class="page-footer">
+        <p>Follow me here:</p>
+        <div>
+            <a class="links" href="https://github.com/krishokr" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a class="links" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+            <a class="links" href="tel:+17074301005" aria-label="Telephone Number"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
