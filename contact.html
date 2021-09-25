@@ -6,16 +6,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/dragon.ico" />   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&family
-        osefin+Slab:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&familyosefin+Slab:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.production.css" />
     <script src="https://kit.fontawesome.com/023be3cbcd.js" crossorigin="anonymous"></script>
     <title>Contact Kriss</title>
 </head>
-<body>
+<body class="contact-body">
     <header class="page-header">
         <img class="logo page-header__item" src="img/dragon-solid.svg" alt="A logo that is a green dragon." >
 
@@ -31,25 +30,29 @@
     </header>
 
     <main>
-        <div>
-            <h1>Don't be a stranger.</h1>           
-            <button class="primary_button"><a href="#contactForm">Get in touch!</a></button>
-            <a class="links" href="mailto:kristoferhokr@gmail.com">Kris's Email</a>
-        </div>
+        <div class="contact-column-wrapper">
+            <div class="wrapper">
+                <h1>Don't be a stranger.</h1>    
+                <p>Have a project in mind? I'm here to help. Let's get to know each other.</p>       
+                <a href="mailto:kristoferhokr@gmail.com" class="primary_button">Get in touch!</a>
+                <h1>Or...</h1>
+            </div>
 
-        <form id="contactForm" action="" method="post">
-            <label for="contact-email" Email*: </label>
-            <input id="contact-email" placeholder="email"type="email" required>
-          
-            <label for="contact-phone">Telephone: </label>
-            <input id="contact-phone" type="tel" placeholder="xxx-xxx-xxxx">
-          
-            <label for="contact-message">Message*</label>
-            <textarea id="contact-message" required maxlength="250" placeholder="<250 characters>"></textarea>></textarea>
-          
-            <input type="submit" value="Send message" class="primary_button">
-          </form>
-          
+            <form class="contactForm">
+                <div class="email-phone">
+                    
+                    <input id="contact-email" placeholder="email" type="email" required>
+                
+                    
+                    <input id="contact-phone" type="tel" placeholder="phone">
+                </div>
+
+                    
+                <textarea id="contact-message" required maxlength="250" placeholder="message <250 characters>"></textarea>
+
+                <input type="submit" value="Send a message" class="primary_button">
+            </form>
+        </div>
     </main>
     
     <footer class="page-footer">

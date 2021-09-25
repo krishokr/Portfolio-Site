@@ -427,12 +427,55 @@
   .profile h2 span{
     font-size: 70%;
   }
+
+    /* End Index.html styling */
   
+  /* About Page Styling */
   #aboutPgPhoto {
-    width: 30%;
+    width: 90%;
+    box-shadow:0 5px 10px rgba(0,0,0);
   }
+
+
+
+  .about-row-wrapper {
+    display: flex;
+    padding: 5%;
+  }
+ 
+
+  /* End About Page Styling */
   
-  /* End Index.html styling */
+/* Contact Form Styling */
+.contact-body {
+  background: hsla(94, 22%, 73%, 1);
+
+background: linear-gradient(180deg, hsla(94, 22%, 73%, 0.5) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -moz-linear-gradient(180deg, hsla(94, 22%, 73%, 0.5) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -webkit-linear-gradient(180deg, hsla(94, 22%, 73%, 0.5) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", endColorstr="#000000", GradientType=1 );rosoft.gradient( startColorstr="#b8c9ab", endColorstr="#1c1554", GradientType=1 );
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+#contact-message {
+  width: 30vw;
+  height: 20vh;
+}
+
+.contactForm input {
+  align-self: flex-start;
+}
+
+.contact-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
   
   /* Footer Styling */
