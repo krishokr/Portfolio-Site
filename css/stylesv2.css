@@ -1,10 +1,16 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
+:root {
+    --primary-color: #B8C9AB;
+    --secondary-color: #A5B2B9;
+    --birch-gray-dark: #D2CFC4;
+    --birch-gray-light: #E9E9DD;
+    --birch-gray-green: #D8D6C5;
+  
+    --primary-font-color: #393430;
+    --secondary-font-color: #E3E8E3;
+  
+    --white: #fff;
+    
+  }
 
 
 * {
@@ -230,7 +236,7 @@
     background-color: #393430;
     color: #E3E8E3;
     padding: 1%;
-    border-radius: 10%;
+    border-radius: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     text-decoration: none;
     -webkit-transition: 0.2s opacity;
@@ -456,7 +462,7 @@ background: -moz-linear-gradient(180deg, hsla(94, 22%, 73%, 0.5) 0%, hsla(0, 0%,
 
 background: -webkit-linear-gradient(180deg, hsla(94, 22%, 73%, 0.5) 0%, hsla(0, 0%, 0%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", endColorstr="#000000", GradientType=1 );rosoft.gradient( startColorstr="#b8c9ab", endColorstr="#1c1554", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", endColorstr="#000000", GradientType=1 );
 }
 .contactForm {
   display: flex;
@@ -467,12 +473,20 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", en
   height: 20vh;
 }
 
-.email-phone input {
-  background-color: var();
+.contact-input {
+    background-color: var(--secondary-font-color);
+    border-radius: 10px;
 }
+
 .contactForm input {
   align-self: flex-start;
 }
+
+#contact-message {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
 .contact-column-wrapper {
   display: flex;
@@ -492,18 +506,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", en
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-color: #FF5349;
-    background: hsla(5, 100%, 64%, 1);
-  
-  background: -webkit-gradient(linear, left top, right top, from(hsla(5, 100%, 64%, 0.5)), to(hsla(5, 100%, 64%, 1)));
-  
-  background: -o-linear-gradient(left, hsla(5, 100%, 64%, 0.5) 0%, hsla(5, 100%, 64%, 1) 100%);
-  
-  background: linear-gradient(90deg, hsla(5, 100%, 64%, 0.5) 0%, hsla(5, 100%, 64%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(5, 100%, 64%, 0.5) 0%, hsla(5, 100%, 64%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF5345", endColorstr="#FF5345", GradientType=1 );
+    background-color: #758E69ff;
+    background: hsla(101, 23%, 44%, 1);
+
+    background: linear-gradient(90deg, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#678A57", endColorstr="#D8D6C5", GradientType=1 );
     margin-top: 20%;
   }
   
