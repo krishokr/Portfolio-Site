@@ -517,17 +517,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", en
             flex-direction: column;
     text-align: center;
     background-color: #758E69ff;
-    background: hsla(101, 23%, 44%, 1);
-
-    background: -webkit-gradient(linear, left top, right top, from(hsla(101, 23%, 44%, 1)), to(hsla(54, 20%, 81%, 1)));
-
-    background: -o-linear-gradient(left, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
-
-    background: linear-gradient(90deg, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(101, 23%, 44%, 1) 0%, hsla(54, 20%, 81%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#678A57", endColorstr="#D8D6C5", GradientType=1 );
+    background: hsla(101, 23%, 29%, 1);
+    background: linear-gradient(90deg, hsla(101, 23%, 29%, 1) 0%, hsla(99, 15%, 49%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(101, 23%, 29%, 1) 0%, hsla(99, 15%, 49%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(101, 23%, 29%, 1) 0%, hsla(99, 15%, 49%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#435A38", endColorstr="#78916B", GradientType=1 );
     margin-top: 20%;
   }
   
@@ -554,7 +548,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", en
     display: inline-block;
     width: 30%;
     text-align: left;
-    background-color: #D8D6C5;
+    background-color: #78916Bff;
     padding: 2%;
     margin: 1%;
   }
@@ -574,7 +568,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#b8c9ab", en
       width: auto;
       min-height: auto;
       margin: 0;
-      background-color: #D8D6C5;
+      background-color: #78916Bff;
     }
     section h1 {
       display: -webkit-box;

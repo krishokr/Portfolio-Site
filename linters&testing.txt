@@ -1,0 +1,23 @@
+
+--Linters--
+I used Visual Studio Code and I might be wrong, but people said there are no html linters available. 
+I used the built in linter for CSS.
+
+
+--Cross Browser Testing--
+
+I found that on Safari, my animation doesn't look quite the same as on Chrome; 
+instead of drawing the image from a blank canvas, it outlines it.
+
+I used Chrome when developing the site, so everything should work as planned.
+
+IE 11
+- Logo is black and misshapen.
+- Background gradient is off- it moves from black on the bottom of the screen to green on top (instead of black on left and green on right).
+    This isn't great for the animation, which is white.
+- Work project is centered. This is good when there's one project, but unsure as to if there are others.
+- Animation doesn't animate.
+
+There are no issues with Firefox.
+
+
