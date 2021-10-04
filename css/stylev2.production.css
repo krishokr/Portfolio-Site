@@ -506,7 +506,7 @@ section {
   .grid__item:hover::before, .grid__item:hover::after {
     transform: scale(1);
   }
-  /* End hover animation */
+  End hover animation
   
   }
   section h1 {
