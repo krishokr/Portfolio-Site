@@ -118,9 +118,8 @@ nav.page-header__item {
     color: #393430;
 }
 
-.index-flex-wrapper {
-    display: flex;
-    
+.flex-wrapper {
+    display: flex; 
 }
 
 .social-media-container {
@@ -203,3 +202,76 @@ nav.page-header__item {
         font-size: 8vw;
     }
 }
+
+/* ------------------------------------------------------------- */
+/* Portfolio Page Styling */
+
+/* Start Grid Fallback */
+section {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .grid__item {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    background-color: #78916B;;
+    padding: 2%;
+    margin: 1%;
+    border: #000 solid 3px;
+    color: #e3e8e3;
+  }
+/* End Grid Fallback */
+  
+  @supports (display: grid) {
+    .project-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 10%;
+    }
+    .grid__item {
+        text-align: center;
+        padding: 2%;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        background-color: #78916bff;
+        border:  2px solid #547840;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .grid__item h2 {
+        line-height: 30px;
+    }
+    .project-contents .show-hidden-text{
+        color: #e3e8e3;
+    }
+    .project-contents .show-hidden-text:hover {
+        color: #393430;
+    }
+    
+    section h1 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media all and (max-width: 500px) {
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .project-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media all and (max-width: 750px) {
+    .project-list {
+      grid-gap: 10px;
+    }
+  }

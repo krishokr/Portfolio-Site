@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="img/dragon.ico" />  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&family=Josefin+Slab:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fonts/webfontkit-20211201-132148/stylesheet.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/stylev2.production.css" />
+    <link rel="stylesheet" href="css/stylev3.css" />
     <script src="https://kit.fontawesome.com/023be3cbcd.js" crossorigin="anonymous"></script>
     <title>Kris Hokr</title>
 </head>
@@ -18,20 +16,27 @@
     <header class="page-header">
         <img class="logo page-header__item" src="img/dragon-solid.svg" alt="A logo that is a green dragon." >
 
-        <nav class="page-header__item">
-            <ul role="menubar" class="navigation-list">
+        <nav class="page-header__item mobile-view-container">
+
+			<a class="mobile-menu-button">
+				<i class="fa fa-bars hamburger-icon"></i>
+				<i class="fas fa-window-close close-icon"></i>
+			</a>
+
+            <ul role="menubar" class="navigation-list mobile-menu-hidden">
                 <li role="presentation" >
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                </li>
+					<a href="index.html" role="menuitem" class="navigation-list__item highlight-text-in">HOME</a>
+				</li>  
+				<li role="presentation" >
+					<a href="portfolio.html" role="menuitem" class="navigation-list__item highlight-text-in navigation-list__item--active">PORTFOLIO</a>
+				</li>             
                 <li role="presentation" >
-                    <a href="portfolio.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Portfolio</a>
-                </li>              
-                <li role="presentation">
-                    <a href="resume.html" role="menuitem" class="navigation-list__item">Resume</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
+					<a href="resume.html" role="menuitem" class="navigation-list__item highlight-text-in">RESUME</a>
+				</li>
+				
+                <li role="presentation" >
+					<a href="contact.html" role="menuitem" class="navigation-list__item highlight-text-in">CONTACT</a>
+				</li>
                 
             </ul>
         </nav>
@@ -41,42 +46,45 @@
 
     <section>
         <h1>Work</h1>
-        <div class="project-list">
-            <div class="grid__item">
-                <h2>Manetti-Shrem Museum Mobile App: Slice the Pie</h2>
-                
-                <div>
-                    <h3>Project Description</h3>
-                    <p>
-                        Say you got to run a university. 
-                        How much would you allocate to different sectors? 
-                        Learn about your funding sources with a guessing game.
-                        You make your choices by inputting percentages of each section of a pie chart. 
-                        See how well your choices match next to the real choices made by the Provost.
-                    </p>
-                </div>
-                <div>
-                    <h3>Responsibilities</h3>
-                    <p>
-                        I was responsible for all frontend work. This project uses React.js and D3.
-                    </p>
-                </div>
-                    
-                <a class="links" href="https://manettishremproject.krishokr.repl.co/" target="_blank">View Slice the Pie on Repl.it</a>
+
+        <div class="flex-wrapper">
+            <div class="social-media-container">
+                <a class="social-media-icon" href="https://github.com/krishokr" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a class="social-media-icon" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a class="social-media-icon" href="tel:+17074301005" aria-label="Telephone Number"><i class="fas fa-phone"></i></a>
             </div>
-        
-        
-    </div>
-        
+            <div class="project-list">
+                <div class="grid__item">
+                    <h2>MANETTI-SHREM MUSEUM MOBILE APP: SLICE THE PIE</h2>
+                    
+                    <div class="project-contents">
+                        <h3>PROJECT DESCRIPTION</h3>
+                        <a class="show-hidden-text">Learn more.&nbsp;<i class="fas fa-arrow-circle-down"> </i></a>
+                        <a class="hide-text"><i class="fas fa-arrow-circle-up"></i>&nbsp;Learn less.</a>
+                        <p class="hidden-text-container">
+                            Say you got to run a university. 
+                            How much would you allocate to different sectors? 
+                            Learn about your funding sources with a guessing game.
+                            You make your choices by inputting percentages of each section of a pie chart. 
+                            See how well your choices match next to the real choices made by the Provost.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Responsibilities</h3>
+                        <p>
+                            I was responsible for all frontend work. This project uses React.js and D3.
+                        </p>
+                    </div>
+                        
+                    <a class="links" href="https://manettishremproject.krishokr.repl.co/" target="_blank">View Slice the Pie on Repl.it</a>
+                </div>
+            
+            
+            </div>
+        </div>
     </section>
     
     <footer class="page-footer">
-        <p>Follow me here:</p>
-        <div class="social-media">
-            <a class="links" href="https://github.com/krishokr" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-            <a class="links" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-            <a class="links" href="tel:+17074301005" aria-label="Telephone Number"><i class="fas fa-phone"></i></a>
-        </div>
     </footer>
 
 </body>
