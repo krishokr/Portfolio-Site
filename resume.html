@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="img/dragon.ico" /> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&family=Josefin+Slab:wght@200&family=Poiret+One&display=swap" 
-        rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="img/dragon.ico" />  
+    <link rel="stylesheet" href="/css/fonts/webfontkit-20211207-161556/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@200&family=Josefin+Sans:wght@200&family=Josefin+Slab:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="css/stylev2.production.css" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/stylev3.css" />
     <script src="https://kit.fontawesome.com/023be3cbcd.js" crossorigin="anonymous"></script>
-    <title>About Kris</title>
+    <title>Resume</title>
 </head>
 <body>
     <header class="page-header">
         <img class="logo page-header__item" src="img/dragon-solid.svg" alt="A logo that is a green dragon." >
 
-        <nav class="page-header__item">
-            <ul role="menubar" class="navigation-list">
+
+        <nav class="page-header__item mobile-view-container">
+
+			<a class="mobile-menu-button">
+				<i class="fa fa-bars hamburger-icon"></i>
+				<i class="fas fa-window-close close-icon"></i>
+			</a>
+
+            <ul role="menubar" class="navigation-list mobile-menu-hidden">
                 <li role="presentation" >
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                </li>               
+					<a href="index.html" role="menuitem" class="navigation-list__item highlight-text-in">HOME</a>
+				</li>  
+				<li role="presentation" >
+					<a href="portfolio.html" role="menuitem" class="navigation-list__item highlight-text-in">PORTFOLIO</a>
+				</li>             
                 <li role="presentation" >
-                    <a href="portfolio.html" role="menuitem" class="navigation-list__item">Portfolio</a>
-                </li>
-                <li role="presentation">
-                    <a href="resume.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Resume</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
+					<a href="resume.html" role="menuitem" class="navigation-list__item highlight-text-in navigation-list__item--active">RESUME</a>
+				</li>
+				
+                <li role="presentation" >
+					<a href="contact.html" role="menuitem" class="navigation-list__item highlight-text-in">CONTACT</a>
+				</li>
                 
             </ul>
         </nav>
@@ -40,38 +46,24 @@
     </header>
 
     <main>
+        <div class="social-media-box">
+            <a href="https://github.com/krishokr" aria-label="GitHub Profile"><i class="media-icon fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn Profile"><i class="media-icon fab fa-linkedin"></i></a>
+
+            <a href="tel:+17074301005" aria-label="Telephone Number"><i class="media-icon fas fa-phone"></i></a>
+        </div>
+
         <div class="about-row-wrapper">
+            
             <div class="wrapper">
-                <img id="aboutPgPhoto" src="img/IMG_0847.jpeg" alt="A photo of Kris climbing.">
-            </div>
-            <div class="wrapper">
-                <h1>I'm Kris, a recent college graduate from UC Davis looking to help you build web applications.</h1>
-                <p>I spent the end of my college career forging my skills as a frontend developer. Programming is my craft 
-                    I am always looking to refine. </p>
-                <p>As a Philosophy major, I bring to development an analytical eye for detail, organization, and communication.           
-                </p>
-                <p> Since I spent much of my college career pining through century old papers in attempt to derive some kind of 
-                    applicable meaning to our modern society, I value articulating a purpose and have a pragmatic approach when 
-                    it comes to programming. I believe code should be written with purpose; technology today has a profound and 
-                    immeasurable impact on our world, and I want to make sure it's a positive one. That said, I hope to write 
-                    code with the user in mind, and to help both the lives of others and our only planet. </p>
-                <p>When I'm not writing code, you can find me adventuring in the mountains climbing rocks or 
-                    running trails.
-                </p>
+                
                 <a href="files/resumev2.pdf" class="links" download>Check out my resume here.</a>
             </div>
         </div>
        
     </main>
     
-    <footer class="page-footer">
-        <p>Follow me here:</p>
-        <div>
-            <a class="links" href="https://github.com/krishokr" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-            <a class="links" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-            <a class="links" href="tel:+17074301005" aria-label="Telephone Number"><i class="fas fa-phone"></i></a>
-        </div>
-    </footer>
 
 </body>
 </html>
